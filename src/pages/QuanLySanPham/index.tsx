@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Button, Input, Card, message, Typography } from 'antd';
 import { PlusOutlined, SearchOutlined } from '@ant-design/icons';
 
-import ProductTable, { ProductDataType } from './ProductTable';
-import ProductModal, { ProductFormValues } from './ProductModal';
+import ProductTable, { ProductDataType } from './components/ProductTable';
+import ProductModal, { ProductFormValues } from './components/ProductModal';
 
 const initialData: ProductDataType[] = [
 	{ id: 1, name: 'Laptop Dell XPS 13', price: 25000000, quantity: 10 },
