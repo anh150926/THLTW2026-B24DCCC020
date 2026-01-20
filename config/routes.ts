@@ -42,6 +42,13 @@
 		icon: 'OrderedListOutlined',
 		component: './TodoList',
 	},
+	{
+		path: '/quan-ly-san-pham',
+		name: 'QuanLySanPham',
+		icon: 'AppstoreAddOutlined',
+		component: './QuanLySanPham',
+	},
+	///////////////////////////////////
 
 	// DANH MUC HE THONG
 	// {
