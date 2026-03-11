@@ -66,6 +66,18 @@
 		icon: 'ReadOutlined',
 		component: './TH01/Bai2_QuanLyTienDo',
 	},
+	{
+		path: '/oan-tu-ti',
+		name: 'OanTuTi',
+		icon: 'SmileOutlined',
+		component: './TH02/Bai1_OanTuTi',
+	},
+	{
+		path: '/ngan-hang-cau-hoi',
+		name: 'NganHangCauHoi',
+		icon: 'DatabaseOutlined',
+		component: './TH02/Bai2_NganHangCauHoi',
+	},
 
 	///////////////////////////////////
 
