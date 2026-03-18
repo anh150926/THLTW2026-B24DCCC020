@@ -79,6 +79,13 @@
 		component: './TH02/Bai2_NganHangCauHoi',
 	},
 
+	{
+		path: '/dich-vu',
+		name: 'DichVu',
+		icon: 'SettingOutlined',
+		component: './TH03',
+	},
+
 	///////////////////////////////////
 
 	// DANH MUC HE THONG
