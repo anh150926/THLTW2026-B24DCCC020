@@ -1,4 +1,4 @@
-﻿export default [
+export default [
 	{
 		path: '/user',
 		layout: false,
@@ -84,6 +84,13 @@
 		name: 'DichVu',
 		icon: 'SettingOutlined',
 		component: './TH03',
+	},
+
+	{
+		path: '/van-bang',
+		name: 'VanBang',
+		icon: 'BookOutlined',
+		component: './TH04',
 	},
 
 	///////////////////////////////////
