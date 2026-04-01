@@ -93,6 +93,13 @@ export default [
 		component: './TH04',
 	},
 
+	{
+		path: '/quan-ly-clb',
+		name: 'QuanLyCLB',
+		icon: 'TeamOutlined',
+		component: './TH05',
+	},
+
 	///////////////////////////////////
 
 	// DANH MUC HE THONG

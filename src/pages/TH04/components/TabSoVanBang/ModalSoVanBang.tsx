@@ -22,7 +22,6 @@ export const ModalSoVanBang: React.FC<Props> = ({ visible, onCancel, onSave, edi
 
 	const handleSubmit = async (values: any) => {
 		setLoading(true);
-		// Giả lập API loading 300ms cho UX mượt
 		await new Promise((resolve) => setTimeout(resolve, 300));
 		await onSave(values);
 		setLoading(false);
