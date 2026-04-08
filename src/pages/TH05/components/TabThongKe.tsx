@@ -14,13 +14,11 @@ interface Props {
 export const TabThongKe: React.FC<Props> = ({ dsCauLacBo, dsDonDangKy }) => {
 	const [xuatCLBId, setXuatCLBId] = useState<string | undefined>(undefined);
 
-	// Thống kê tổng quan
 	const tongCLB = dsCauLacBo.length;
 	const tongPending = dsDonDangKy.filter((d) => d.trangThai === TrangThaiDon.PENDING).length;
 	const tongApproved = dsDonDangKy.filter((d) => d.trangThai === TrangThaiDon.APPROVED).length;
 	const tongRejected = dsDonDangKy.filter((d) => d.trangThai === TrangThaiDon.REJECTED).length;
 
-	// Dữ liệu cho ColumnChart
 	const chartData = useMemo(() => {
 		const xAxis = dsCauLacBo.map((c) => c.tenCLB);
 		const arrPending = dsCauLacBo.map((c) => countDonByStatus(c.id, TrangThaiDon.PENDING, dsDonDangKy));
@@ -29,7 +27,6 @@ export const TabThongKe: React.FC<Props> = ({ dsCauLacBo, dsDonDangKy }) => {
 		return { xAxis, yAxis: [arrPending, arrApproved, arrRejected] };
 	}, [dsCauLacBo, dsDonDangKy]);
 
-	/** Xuất danh sách thành viên Approved ra XLSX */
 	const handleExportXLSX = () => {
 		let dsXuat: DonDangKy[];
 		let fileName: string;

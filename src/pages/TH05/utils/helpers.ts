@@ -1,13 +1,11 @@
 import { CauLacBo, DonDangKy, TrangThaiDon } from '../types';
 import * as XLSX from 'xlsx';
 
-/** Lấy tên CLB theo ID */
 export const getCLBName = (id: string, dsCauLacBo: CauLacBo[]): string => {
 	const clb = dsCauLacBo.find((c) => c.id === id);
 	return clb ? clb.tenCLB : '—';
 };
 
-/** Đếm đơn đăng ký theo CLB và trạng thái */
 export const countDonByStatus = (
 	cauLacBoId: string,
 	trangThai: TrangThaiDon,
@@ -16,12 +14,10 @@ export const countDonByStatus = (
 	return dsDonDangKy.filter((d) => d.cauLacBoId === cauLacBoId && d.trangThai === trangThai).length;
 };
 
-/** Lấy danh sách thành viên đã duyệt của 1 CLB */
 export const getApprovedMembers = (cauLacBoId: string, dsDonDangKy: DonDangKy[]): DonDangKy[] => {
 	return dsDonDangKy.filter((d) => d.cauLacBoId === cauLacBoId && d.trangThai === TrangThaiDon.APPROVED);
 };
 
-/** Xuất dữ liệu ra file Excel */
 export const exportToXLSX = (data: Record<string, any>[], fileName: string): void => {
 	const ws = XLSX.utils.json_to_sheet(data);
 	const wb = XLSX.utils.book_new();
@@ -29,7 +25,6 @@ export const exportToXLSX = (data: Record<string, any>[], fileName: string): voi
 	XLSX.writeFile(wb, `${fileName}.xlsx`);
 };
 
-/** Format ngày giờ đẹp: HH:mm DD/MM/YYYY */
 export const formatDateTime = (isoString: string): string => {
 	const d = new Date(isoString);
 	const pad = (n: number) => n.toString().padStart(2, '0');

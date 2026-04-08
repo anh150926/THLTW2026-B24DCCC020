@@ -8,7 +8,6 @@ interface Props {
 	onConfirm: (clbMoiId: string) => void;
 	dsCauLacBo: CauLacBo[];
 	soLuong: number;
-	/** CLB hiện tại (để loại ra khỏi danh sách chọn) */
 	currentCLBId?: string;
 }
 

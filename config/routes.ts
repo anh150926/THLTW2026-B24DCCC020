@@ -100,6 +100,13 @@ export default [
 		component: './TH05',
 	},
 
+	{
+		path: '/ke-hoach-du-lich',
+		name: 'KeHoachDuLich',
+		icon: 'GlobalOutlined',
+		component: './TH06',
+	},
+
 	///////////////////////////////////
 
 	// DANH MUC HE THONG

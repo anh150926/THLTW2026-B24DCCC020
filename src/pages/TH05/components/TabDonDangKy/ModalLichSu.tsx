@@ -8,7 +8,6 @@ interface Props {
 	visible: boolean;
 	onCancel: () => void;
 	dsLichSu: LichSuThaoTac[];
-	/** Nếu truyền donId thì chỉ hiện lịch sử của đơn đó */
 	donId?: string;
 }
 
