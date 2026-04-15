@@ -107,6 +107,13 @@ export default [
 		component: './TH06',
 	},
 
+	{
+		path: '/quan-ly-phong-hoc',
+		name: 'KTGK - Quản Lý Phòng Học',
+		icon: 'BankOutlined',
+		component: './KTGK',
+	},
+
 	///////////////////////////////////
 
 	// DANH MUC HE THONG
