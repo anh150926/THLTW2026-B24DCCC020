@@ -114,6 +114,13 @@ export default [
 		component: './KTGK',
 	},
 
+	{
+		path: '/blog-ca-nhan',
+		name: 'Blog Cá Nhân',
+		icon: 'ReadOutlined',
+		component: './TH07',
+	},
+
 	///////////////////////////////////
 
 	// DANH MUC HE THONG
