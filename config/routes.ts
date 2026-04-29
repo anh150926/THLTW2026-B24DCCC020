@@ -121,6 +121,13 @@ export default [
 		component: './TH07',
 	},
 
+	{
+		path: '/the-duc-suc-khoe',
+		name: 'Thể Dục & Sức Khỏe',
+		icon: 'HeartOutlined',
+		component: './TH08',
+	},
+
 	///////////////////////////////////
 
 	// DANH MUC HE THONG
