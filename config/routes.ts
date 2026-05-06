@@ -128,6 +128,13 @@ export default [
 		component: './TH08',
 	},
 
+	{
+		path: '/quan-ly-cong-viec',
+		name: 'Quản Lý Công Việc',
+		icon: 'ProjectOutlined',
+		component: './TH09',
+	},
+
 	///////////////////////////////////
 
 	// DANH MUC HE THONG
